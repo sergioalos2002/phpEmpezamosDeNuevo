@@ -42,16 +42,6 @@
 
     echo "El numero " . esPrimo($num) . " y ademas " . esPar($num) . "";
 
-
-
-
-
-
-
-
-
-
-
     ?>
 </body>
 
