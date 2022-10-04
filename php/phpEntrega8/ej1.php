@@ -14,6 +14,7 @@
      echo "<p>Ha escrito (" . $texto . ")<br>";
      echo  "ej1";
      function esPar($num){
+        
         if ($num % 2 == 0) {
             return true;
         }else{
