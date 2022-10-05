@@ -10,17 +10,52 @@
     <?php 
     $texto = "";
      $texto = $_REQUEST["texto"];
-     echo "<h1>Validacion  de entrada de texto 1 (RESULTADO)</h1>";
+     echo "<h1>Validacion  de entrada de texto 2 (RESULTADO)</h1>";
      echo "<p>Ha escrito (" . $texto . ")<br>";
      echo  "ej1";
-     function esPar($num){
-        
-        if ($num % 2 == 0) {
-            return true;
-        }else{
-            return false;
-        }
-     }
+     
+     if (preg_match("/^[[:alpha:]]( +[[:alpha:]])*$/",$texto)) {
+        echo "<p>La cadena  (" . $texto . ") es correcta</p>";
+    }else{
+        echo "<p>La cadena  (" . $texto . ") No es correcta</p>";
+    } 
+
+    echo "<br> ej2";
+
+    if (preg_match("/^[[:alpha:]]( +[[:alpha]]){1,}$/",$texto)) {
+        echo "<p>La cadena  (" . $texto . ") es valida</p>";
+    }else{
+        echo "<p>La cadena  (" . $texto . ") No es valida</p>";
+    } 
+
+
+    
+    echo "<br> ej3";
+
+    if (preg_match("/^([a-z]+)( +[a-z])*$/",$texto)) {
+        echo "<p>La cadena  (" . $texto . ") es correcta</p>";
+    }else{
+        echo "<p>La cadena  (" . $texto . ") No es correcta</p>";
+    } 
+
+
+
+    echo "<br>";
+    echo "<br>";
+    echo "<br>";
+    echo "<br>";
+    echo "<br>";
+    echo "<br>";
+    echo "<br>";
+    echo "<br>";
+    echo "<br>";
+    echo "<br>";
+
+
+
+
+
+     
      if ($texto == "") {
         echo "<p>La cadena  (" . $texto . ") esta vacia";
      }else{
