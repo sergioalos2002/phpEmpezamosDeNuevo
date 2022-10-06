@@ -22,21 +22,44 @@
 
     echo "<br> ej2";
 
-    if (preg_match("/^[[:alpha:]]( +[[:alpha]]){1,}$/",$texto)) {
-        echo "<p>La cadena  (" . $texto . ") es valida</p>";
-    }else{
-        echo "<p>La cadena  (" . $texto . ") No es valida</p>";
-    } 
-
-
     
-    echo "<br> ej3";
 
     if (preg_match("/^([a-z]+)( +[a-z])*$/",$texto)) {
         echo "<p>La cadena  (" . $texto . ") es correcta</p>";
     }else{
         echo "<p>La cadena  (" . $texto . ") No es correcta</p>";
-    } 
+    }
+
+    
+    echo "<br> ej3";
+
+    if (preg_match("/^[[:alpha:]]+( +[[:alpha:]]+)*$/",$texto)) {
+        echo "<p>La cadena  (" . $texto . ") es correcta</p>";
+    }else{
+        echo "<p>La cadena  (" . $texto . ") No es correcta</p>";
+    }  
+
+    echo "<br> ej4";
+
+    if (preg_match("/^[A-Z]+$/",$texto)) {
+        echo "<p>La cadena  (" . $texto . ") es correcta</p>";
+    }else{
+        echo "<p>La cadena  (" . $texto . ") No es correcta</p>";
+    }  
+
+    echo "<br> ej5";
+
+
+     
+
+
+    if (preg_match("/^[0-9]{2}[\/][0-9]{2}[\/][0-9]{4}$/",$texto)) {
+        echo "<p>La cadena  (" . $texto . ") es correcta</p>";
+    }else{
+        echo "<p>La cadena  (" . $texto . ") No es correcta</p>";
+    }  
+    
+    echo "<br> ej6";
 
 
 
